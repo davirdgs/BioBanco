@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="mainHeaderCell" id="kUt-Yz-GDF" customClass="MainHeaderCell" customModule="Final_Challenge" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="637" height="181"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="637" height="181"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xHY-ay-TVt">
+                        <rect key="frame" x="0.0" y="0.0" width="160" height="181"/>
+                        <animations/>
+                        <state key="normal" title="Button" image="ListIcon"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tkf-tk-NtA">
+                        <rect key="frame" x="160" y="0.0" width="159" height="181"/>
+                        <animations/>
+                        <state key="normal" title="Button" image="ClockIcon"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y0p-xG-Lgy">
+                        <rect key="frame" x="319" y="0.0" width="159" height="181"/>
+                        <animations/>
+                        <state key="normal" title="Button" image="LampIcon"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v5k-RF-E1d">
+                        <rect key="frame" x="478" y="0.0" width="159" height="181"/>
+                        <animations/>
+                        <state key="normal" title="Button" image="ConfigIcon"/>
+                    </button>
+                </subviews>
+                <animations/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="tkf-tk-NtA" firstAttribute="top" secondItem="kUt-Yz-GDF" secondAttribute="top" id="0Fw-CT-NTX"/>
+                <constraint firstItem="Y0p-xG-Lgy" firstAttribute="leading" secondItem="tkf-tk-NtA" secondAttribute="trailing" id="0Lz-S7-4Kn"/>
+                <constraint firstItem="xHY-ay-TVt" firstAttribute="leading" secondItem="kUt-Yz-GDF" secondAttribute="leading" id="7Jc-Bc-0Ay"/>
+                <constraint firstItem="tkf-tk-NtA" firstAttribute="leading" secondItem="xHY-ay-TVt" secondAttribute="trailing" id="IMb-Kx-APf"/>
+                <constraint firstItem="tkf-tk-NtA" firstAttribute="width" secondItem="Y0p-xG-Lgy" secondAttribute="width" id="ISc-NI-nbT"/>
+                <constraint firstAttribute="bottom" secondItem="xHY-ay-TVt" secondAttribute="bottom" id="ODE-tG-8rc"/>
+                <constraint firstAttribute="bottom" secondItem="tkf-tk-NtA" secondAttribute="bottom" id="SWv-h1-V3t"/>
+                <constraint firstItem="Y0p-xG-Lgy" firstAttribute="width" secondItem="v5k-RF-E1d" secondAttribute="width" id="bBW-Yi-HxE"/>
+                <constraint firstAttribute="bottom" secondItem="Y0p-xG-Lgy" secondAttribute="bottom" id="gD7-sm-YzJ"/>
+                <constraint firstItem="v5k-RF-E1d" firstAttribute="leading" secondItem="Y0p-xG-Lgy" secondAttribute="trailing" id="iXU-VY-3Rg"/>
+                <constraint firstItem="xHY-ay-TVt" firstAttribute="width" secondItem="tkf-tk-NtA" secondAttribute="width" id="kUF-Hr-wkU"/>
+                <constraint firstAttribute="trailing" secondItem="v5k-RF-E1d" secondAttribute="trailing" id="lGZ-Ij-tIJ"/>
+                <constraint firstItem="xHY-ay-TVt" firstAttribute="top" secondItem="kUt-Yz-GDF" secondAttribute="top" id="pqL-9i-AZs"/>
+                <constraint firstItem="Y0p-xG-Lgy" firstAttribute="top" secondItem="kUt-Yz-GDF" secondAttribute="top" id="taN-1n-N8f"/>
+                <constraint firstAttribute="bottom" secondItem="v5k-RF-E1d" secondAttribute="bottom" id="vXL-Mt-lfV"/>
+                <constraint firstItem="v5k-RF-E1d" firstAttribute="top" secondItem="kUt-Yz-GDF" secondAttribute="top" id="zC5-Ym-fSN"/>
+            </constraints>
+            <size key="customSize" width="637" height="181"/>
+            <connections>
+                <outlet property="caseButton" destination="Y0p-xG-Lgy" id="cgw-A7-Lbi"/>
+                <outlet property="catalogButton" destination="xHY-ay-TVt" id="uax-C3-5jm"/>
+                <outlet property="configButton" destination="v5k-RF-E1d" id="YCC-7o-4Jl"/>
+                <outlet property="historicButton" destination="tkf-tk-NtA" id="Uud-0P-lkF"/>
+            </connections>
+            <point key="canvasLocation" x="430.5" y="462.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ClockIcon" width="350" height="350"/>
+        <image name="ConfigIcon" width="350" height="350"/>
+        <image name="LampIcon" width="350" height="350"/>
+        <image name="ListIcon" width="600" height="600"/>
+    </resources>
+</document>
